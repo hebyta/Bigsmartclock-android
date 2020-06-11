@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.bigsmartclockapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:5:5-68
+11-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:6:5-74
+12-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:7:5-81
+13-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <application
+15-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:9:5-28:19
+16        android:allowBackup="true"
+16-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] C:\Users\El Puto Kanko\.gradle\caches\transforms-2\files-2.1\aa782ce88e4a65071c9b22f6f1fd262a\core-1.0.1\AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:14:9-35
+23        android:theme="@style/AppTheme" >
+23-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:15:9-40
+24        <activity
+24-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:16:9-24:20
+25            android:name="com.example.bigsmartclockapp.MainActivity"
+25-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:17:13-41
+26            android:label="@string/title_activity_main"
+26-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:18:13-56
+27            android:theme="@style/AppTheme.NoActionBar" >
+27-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:19:13-56
+28            <intent-filter>
+28-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:20:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:21:17-69
+29-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:21:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:22:17-77
+31-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <meta-data
+35-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:25:9-27:57
+36            android:name="preloaded_fonts"
+36-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:26:13-43
+37            android:resource="@array/preloaded_fonts" />
+37-->E:\Development\Workspace\Android\BigSmartClockApp\app\src\main\AndroidManifest.xml:27:13-54
+38
+39        <provider
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\El Puto Kanko\.gradle\caches\transforms-2\files-2.1\80a00d5735d69f4f399457d9ccd7230d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+40            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+40-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\El Puto Kanko\.gradle\caches\transforms-2\files-2.1\80a00d5735d69f4f399457d9ccd7230d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+41            android:authorities="com.example.bigsmartclockapp.lifecycle-process"
+41-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\El Puto Kanko\.gradle\caches\transforms-2\files-2.1\80a00d5735d69f4f399457d9ccd7230d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+42            android:exported="false"
+42-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\El Puto Kanko\.gradle\caches\transforms-2\files-2.1\80a00d5735d69f4f399457d9ccd7230d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+43            android:multiprocess="true" />
+43-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\El Puto Kanko\.gradle\caches\transforms-2\files-2.1\80a00d5735d69f4f399457d9ccd7230d\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+44    </application>
+45
+46</manifest>
