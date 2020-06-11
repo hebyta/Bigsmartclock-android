@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/top_section"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+    </group>
+    <group
+        android:id="@+id/middleSection"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_clock"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/menu_clock" />
+        <item
+            android:id="@+id/nav_chrono"
+            android:icon="@drawable/ic_chrono"
+            android:title="@string/menu_chrono" />
+        <item
+            android:id="@+id/nav_countdown"
+            android:icon="@drawable/ic_countdown"
+            android:title="@string/menu_countdown" />
+        <item
+            android:id="@+id/nav_auto_chrono"
+            android:icon="@drawable/ic_auto_chrono"
+            android:title="@string/menu_auto_chrono" />
+        <item
+            android:id="@+id/nav_auto_countdown"
+            android:icon="@drawable/ic_auto_countdown"
+            android:title="@string/menu_auto_countdown" />
+    </group>
+
+    <group
+        android:id="@+id/bottomSection"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/menu_help" />
+    </group>
+</menu>

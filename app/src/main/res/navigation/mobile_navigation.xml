@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bigsmartclockapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_clock"
+        android:name="com.example.bigsmartclockapp.ui.clock.ClockFragment"
+        android:label="@string/menu_clock"
+        tools:layout="@layout/fragment_clock" />
+
+    <fragment
+        android:id="@+id/nav_chrono"
+        android:name="com.example.bigsmartclockapp.ui.chrono.ChronoFragment"
+        android:label="@string/menu_chrono"
+        tools:layout="@layout/fragment_chrono" />
+
+    <fragment
+        android:id="@+id/nav_countdown"
+        android:name="com.example.bigsmartclockapp.ui.countdown.CountdownFragment"
+        android:label="@string/menu_countdown"
+        tools:layout="@layout/fragment_countdown" />
+
+    <fragment
+        android:id="@+id/nav_auto_chrono"
+        android:name="com.example.bigsmartclockapp.ui.autoChrono.AutoChronoFragment"
+        android:label="@string/menu_auto_chrono"
+        tools:layout="@layout/fragment_auto_chrono" />
+
+    <fragment
+        android:id="@+id/nav_auto_countdown"
+        android:name="com.example.bigsmartclockapp.ui.autoCountdown.AutoCountDownFragment"
+        android:label="@string/menu_auto_countdown"
+        tools:layout="@layout/fragment_auto_count_down" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.bigsmartclockapp.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" >
+
+        <action
+            android:id="@+id/action_nav_settings_to_bluetoothFragment"
+            app:destination="@id/nav_bluetooth" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.bigsmartclockapp.ui.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_bluetooth"
+        android:name="com.example.bigsmartclockapp.ui.bluetooth.BluetoothFragment"
+        android:label="@string/menu_bluetooth"
+        tools:layout="@layout/fragment_bluetooth" />
+</navigation>

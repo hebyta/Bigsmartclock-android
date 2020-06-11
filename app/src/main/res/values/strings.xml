@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Big Smart Clock</string>
+    <string name="connect">Conectar</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="title_activity_main">Big Smart Clock</string>
+
+
+    <string name="navigation_drawer_open">Abrir Menú</string>
+    <string name="navigation_drawer_close">Cerrar Menú</string>
+    <string name="nav_header_title">Big Smart Clock</string>
+    <string name="nav_header_subtitle">No Conectado</string>
+    <string name="nav_header_desc"></string>
+
+
+    <string name="menu_home">Principal</string>
+    <string name="menu_clock">Reloj</string>
+    <string name="menu_chrono">Cronómetro</string>
+    <string name="menu_countdown">Temporizador</string>
+    <string name="menu_auto_chrono">Cronómetro Autocarga</string>
+    <string name="menu_auto_countdown">Temporizador Autocarga</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_bluetooth">Bluetooth</string>
+
+    <string name="err_no_bluetooth">El dispositivo no dispone de bluetooth</string>
+    <string name="err_no_bluetooth_requested">No se ha solicitado la activación del bluetooth</string>
+    <string name="title_activity_bluetooth">Bluetooth</string>
+
+    <string name="bluetooth_status">Estado</string>
+    <string name="bluetooth_settings">Configuración Bluetooth</string>
+    <string name="bluetooth_scan">Escanear</string>
+    <string name="bluetooth_connected_to">Conectado a:</string>
+    <string name="bluetooth_cant_connect">No se ha podido establecer la conexión con el dispositivo</string>
+    <string name="bluetooth_not_connected">No Conectado</string>
+    <string name="bluetooth_saved_devices">Dispositivos Guardados</string>
+    <string name="bluetooth_available_devices">Dispositivos Disponibles</string>
+
+    <string name="main_status">Estado Activo</string>
+    <string name="led_status">Leds</string>
+    <string name="active_loop">Vuelta Actual</string>
+    <string name="max_loops">Vueltas Máximas</string>
+    <string name="limit">Límite</string>
+    <string name="red">Rojo</string>
+    <string name="blue">Azul</string>
+    <string name="green">Verde</string>
+    <string name="color">Color</string>
+    <string name="brightness">Brillo</string>
+    <string name="initial_time">Tiempo inicial</string>
+    <string name="leds">Leds</string>
+    <string name="change">Cambiar</string>
+    <string name="active_mode">Activar Modo</string>
+    <string name="sync_clock">Sincronizar Reloj</string>
+    <string name="start">Iniciar</string>
+    <string name="stop">Parar</string>
+    <string name="reset">Reiniciar</string>
+    <string name="device_use">Uso del Dispositivo</string>
+    <string name="mode_button">Botón de Modo</string>
+    <string name="config_button">Botón de Configuración</string>
+    <string name="start_stop_button">Botón Start/Stop</string>
+    <string name="up_button">Botón Arriba</string>
+    <string name="down_button">Botón Abajo</string>
+    <string name="format_24_hours">Formato 24 Horas</string>
+
+    <string name="mode_button_help">Botón para cambiar entre los distintos modos del reloj. Durante la configuración, sirve para elegir entre los valores de las horas, minutos, segundos o número de vueltas</string>
+    <string name="config_button_help">Botón para entrar y salir del modo configuración. Para configurar un modo determinado, seleccionamos el modo y pulsamos el botón configuración. A continuación parpaderá el display sobre el que podemos actuar. Con el botón arriba y abajo modificamos los valores. Con el botón modo cambiamos entre horas, minutos, segundos.... Pulsando nuevamente configuración o el botón Start/Stop guardamos la configuración</string>
+    <string name="start_stop_button_help">Botón para iniciar o detener el modo que se encuentre activo en el dispositivo. Si se mantiene pulsando durante 3 segundos, el modo activo se reiniciará.</string>
+    <string name="up_button_help">Botón para cambiar los valores de las horas, minutos, segundos o número de vueltas incrementando su valor.</string>
+    <string name="down_button_help">Botón para cambiar los valores de las horas, minutos, segundos o número de vueltas disminuyendo su valor.</string>
+    <string name="device_use_help_intro">El dispositivo cuenta físicamente con una botonera de cinco botones que permiten el uso y configuración de todos los modos sin necesidad de la aplicación móvil. Para lo único que se necesita la aplicación es para modificar los colores de los leds.</string>
+    <string name="help_clock_intro">El modo reloj es el modo principal. Tiene una precisión exacta de milisegundos y es el único modo activo en todo momento, es decir, no se puede parar o iniciar ni desde el dispositivo, ni desde la aplicación móvil.</string>
+    <string name="help_chrono_intro">El modo cronómetro funciona como cualquier cronómetro convencional, con precisión de milisegundos y con capacidad para iniciar, parar y reiniciar.</string>
+    <string name="help_countdown_intro">El temporizador o cuenta atrás se comporta como un temporizador estándar. Se elige un momento inicial desde el que comenzar, y el tiempo retrocede hasta cero, cuando termina.</string>
+    <string name="help_autochrono_intro">El cronómetro con autocarga es un modo especial de cronómetro que se ejecuta un número determinado de veces, desde cero hasta un momento determinado. Es decir, se ejecuta el tiempo definido por el usuario, las veces definidias por el usuario. Cuando una cronómetro termina, comienza el siguiente hasta completar el número de veces establecido</string>
+    <string name="help_autocountdown_intro">La cuenta atrás con autocarga es, como el cronometro con autocarga, un modo especial de cuenta atrás que permite elegir el numero de veces que se ejecutara, y el tiempo inicial para todas las veces, de forma que cuando se pone en marcha, cuando termina el tiempo establecido, vuelve a comenzar hasta completar el número de veces establecido</string>
+    <string name="help_settings_intro">La configuración del reloj nos permite entre otras cosas, modificar las condiciones de cada modo o cambiar cambiar los colores de los leds. La configuración desde la aplicación móvil o desde el dispositivo tiene un comportamiento y capacidades algo diferentes.</string>
+    <string name="sync_clock_help">Botón para sincronizar el reloj del dispositivo con la hora del teléfono móvil. Es la forma más rápida y cómoda de poner el reloj en hora.</string>
+    <string name="start_chrono_help">Botón para poner en marcha el cronómetro. Sólo se muestra cuando el cronómetro está detenido.</string>
+    <string name="stop_chrono_help">Botón para detener el cronómetro. Sólo se muestra cuando el cronómetro está en marcha.</string>
+    <string name="reset_chrono_help">Botón para reiniciar el cronómetro y poner todos los valores a cero.</string>
+    <string name="start_countdown_help">Botón para poner en marcha el temporizador. Sólo se muestra cuando el temporizador está detenido.</string>
+    <string name="stop_countdown_help">Botón para detener el temporizador. Sólo se muestra cuando el temporizador está en marcha.</string>
+    <string name="reset_countdown_help">Botón para reiniciar el temporizador y establecer los valores de tiempo inicial.</string>
+    <string name="start_autochrono_help">Botón para poner en marcha el cronómetro con autocarga. Sólo se muestra cuando el cronómetro está detenido.</string>
+    <string name="stop_autochrono_help">Botón para detener el cronómetro con autocarga. Sólo se muestra cuando el cronómetro está en marcha.</string>
+    <string name="reset_autochrono_help">Botón para reiniciar el cronómetro con autocarga y establecer los valores de tiempo límite y número máximo de vueltas.</string>
+    <string name="start_autocountdown_help">Botón para poner en marcha el temporizador con autocarga. Sólo se muestra cuando el temporizador está detenido.</string>
+    <string name="stop_autocountdown_help">Botón para detener el temporizador con autocarga. Sólo se muestra cuando el temporizador está en marcha.</string>
+    <string name="reset_autocountdown_help">Botón para reiniciar el temporizador con autocarga y establecer los valores de tiempo inicial y número máximo de vueltas.</string>
+    <string name="help_bluetooth_intro">Para conectarnos por bluetooth con el dispositivo y poder usarlo desde la aplicación móvil debemos hacer click en la opción de configuración del menú lateral.</string>
+    <string name="bluetooth_settings_help">Botón para entrar en las opciones de configuración del bluetooth. En ellas nos aparecerá el estado del bluetooth y la lista de dispositivos guardados. Debemos hacer click en el dispositivo al que queremos conectar.</string>
+    <string name="bluetooth_scan_help">Botón para entrar en la ventana para localizar dispositivos. En caso de ser la primera vez que nos conectamos o si no tenemos almacenado el dispositivo, debemos acceder aquí y emparejar el móvil con el reloj. Para ello buscaremos el dispositivo BIG_SMART_CLOCK. Cuando nos pida la clave, introducimos el valor 1722.</string>
+    <string name="bluetoothAdvice">IMPORTANTE: Si experimenta problemas con la conexión bluetooth, pulse el botón del bluetooth del dispositivo, situado en la parte trasera durante dos segundos y vuelta a intentar conectarse.</string>
+    <string name="leds_help">Para modificar el color de los leds del reloj, únicamente debemos entrar en la ventana de configuración. En ella tendremos los controles para medir la cantidad de color rojo, verde y azul, así como el brillo de los leds, para poder personalizar el reloj. Una vez elegido el color, sólo debemos pulsar en CAMBIAR</string>
+</resources>
