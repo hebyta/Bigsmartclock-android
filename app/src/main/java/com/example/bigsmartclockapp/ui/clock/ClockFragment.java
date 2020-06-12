@@ -130,7 +130,19 @@ public class ClockFragment extends Fragment implements BluetoothManager.Bluetoot
                     }
                     BaseClock clock = output.clocks.get(ClockManager.CLOCK_CODE);
                     is24Hours.setChecked(clock.isIs24HoursClock());
-                    lbl_clockValue.setText(ClockOutput.formatTime(clock.getHours(), clock.getMinutes(), clock.getSeconds()));
+                    int hours = clock.getHours();
+                    String letter = "";
+                    if (!is24Hours.isChecked()) {
+                        if (hours == 0)
+                            hours = 12;
+                        else if (hours > 12)
+                            hours = hours - 12;
+                        if(clock.getHours() >= 12)
+                            letter = " PM";
+                        else
+                            letter = " AM";
+                    }
+                    lbl_clockValue.setText(ClockOutput.formatTime(hours, clock.getMinutes(), clock.getSeconds()) + letter);
                 }
             }
         });

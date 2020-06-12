@@ -157,6 +157,19 @@ public class HomeFragment extends Fragment implements BluetoothManager.Bluetooth
                         lbl_maxLoops.setVisibility(View.GONE);
                         lbl_limit.setVisibility(View.GONE);
                         input_activeTimeLimit.setVisibility(View.GONE);
+                        int hours = activeClock.getHours();
+                        String letter = "";
+                        if (!activeClock.isIs24HoursClock()) {
+                            if (hours == 0)
+                                hours = 12;
+                            else if (hours > 12)
+                                hours = hours - 12;
+                            if(activeClock.getHours() >= 12)
+                                letter = " PM";
+                            else
+                                letter = " AM";
+                        }
+                        input_activeTimeValue.setText(ClockOutput.formatTime(activeClock.getHours(), activeClock.getMinutes(), activeClock.getSeconds()) + letter);
                     }
                 }
             }

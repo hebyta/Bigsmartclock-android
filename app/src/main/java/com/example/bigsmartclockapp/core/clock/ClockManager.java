@@ -69,7 +69,7 @@ public class ClockManager {
             clock.setHours(Integer.parseInt(valueSplit[0]));
             clock.setMinutes(Integer.parseInt(valueSplit[1]));
             clock.setSeconds(Integer.parseInt(valueSplit[2]));
-            clock.setIs24HoursClock(Boolean.parseBoolean(valueSplit[3]));
+            clock.setIs24HoursClock(valueSplit[3].equals("1"));
             clock.setActive(activeMode.equals(CLOCK_CODE));
             clock.setRunning(true);
             return clock;

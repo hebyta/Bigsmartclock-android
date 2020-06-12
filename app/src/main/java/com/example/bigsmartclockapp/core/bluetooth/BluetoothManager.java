@@ -103,6 +103,8 @@ public class BluetoothManager {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                String bufferData = "";
+                boolean addBytes = true;
                 while (!Thread.currentThread().isInterrupted() && isListening && btSocket.isConnected()) {
                     try {
                         int availableBytes = btSocket.getInputStream().available();
@@ -111,11 +113,22 @@ public class BluetoothManager {
                             btSocket.getInputStream().read(packagedBytes);
                             for (int i = 0; i < availableBytes; i++){
                                 byte b = packagedBytes[i];
-
+                                char character = (char)b;
+                                if(character == '&'){
+                                    addBytes = true;
+                                    bufferData += character;
+                                } else if(character == '|'){
+                                    addBytes = false;
+                                    bufferData += character;
+                                } else if(addBytes){
+                                    bufferData += character;
+                                }
                             }
-                            Log.d("Received Data:", new String(packagedBytes,  "UTF-8"));
+                        }
+                        if(bufferData.startsWith("&") && bufferData.endsWith("|")){
                             if(callback  !=  null)
-                                callback.onReceive(new String(packagedBytes,  "UTF-8"));
+                                callback.onReceive(bufferData);
+                            bufferData = "";
                         }
                     } catch (Exception e) {
 
