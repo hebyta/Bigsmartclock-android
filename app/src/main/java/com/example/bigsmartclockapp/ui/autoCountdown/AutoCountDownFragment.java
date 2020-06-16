@@ -182,11 +182,6 @@ public class AutoCountDownFragment extends Fragment  implements  BluetoothManage
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     AutoCountDown clock = (AutoCountDown) output.clocks.get(ClockManager.AUTO_COUNTDOWN_CODE);
                     lbl_autoCountDownValue.setText(ClockOutput.formatTime(clock.getHours(), clock.getMinutes(), clock.getSeconds()));
                     lbl_loopsCount.setText(clock.getCurrentLoop() + " / " + clock.getMaxLoops());

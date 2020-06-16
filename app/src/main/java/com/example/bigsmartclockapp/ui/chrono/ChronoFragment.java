@@ -117,11 +117,6 @@ public class ChronoFragment extends Fragment implements BluetoothManager.Bluetoo
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     Chrono clock = (Chrono) output.clocks.get(ClockManager.CHRONO_CODE);
                     lbl_chronoValue.setText(ClockOutput.formatTime(clock.getHours(), clock.getMinutes(), clock.getSeconds()));
                     isRunning = clock.isRunning();

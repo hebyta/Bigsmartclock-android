@@ -179,11 +179,6 @@ public class AutoChronoFragment extends Fragment implements BluetoothManager.Blu
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     AutoChrono clock = (AutoChrono) output.clocks.get(ClockManager.AUTO_CHRONO_CODE);
                     lbl_autoChronoValue.setText(ClockOutput.formatTime(clock.getHours(), clock.getMinutes(), clock.getSeconds()));
                     lbl_loopsCount.setText(clock.getCurrentLoop() + " / " + clock.getMaxLoops());

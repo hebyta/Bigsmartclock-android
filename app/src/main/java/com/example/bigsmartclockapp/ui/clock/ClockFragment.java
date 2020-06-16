@@ -123,11 +123,6 @@ public class ClockFragment extends Fragment implements BluetoothManager.Bluetoot
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     BaseClock clock = output.clocks.get(ClockManager.CLOCK_CODE);
                     is24Hours.setChecked(clock.isIs24HoursClock());
                     int hours = clock.getHours();

@@ -164,11 +164,6 @@ public class CountdownFragment extends Fragment implements BluetoothManager.Blue
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     CountDown clock = (CountDown) output.clocks.get(ClockManager.COUNTDOWN_CODE);
                     lbl_countDownValue.setText(ClockOutput.formatTime(clock.getHours(), clock.getMinutes(), clock.getSeconds()));
                     isRunning = clock.isRunning();

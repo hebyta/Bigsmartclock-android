@@ -195,11 +195,6 @@ public class SettingsFragment extends Fragment implements BluetoothManager.Bluet
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     if(oldRedColor != output.redColor){
                         oldRedColor = output.redColor;
                         redColorBar.setProgress(oldRedColor);

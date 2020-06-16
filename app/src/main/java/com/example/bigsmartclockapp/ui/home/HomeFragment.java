@@ -103,11 +103,6 @@ public class HomeFragment extends Fragment implements BluetoothManager.Bluetooth
                 boolean idsFound = findIds();
                 ClockOutput output = ClockManager.processOutput(data);
                 if(output != null && idsFound){
-                    try {
-                        BluetoothManager.getInstance().sendStatus();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     BaseClock activeClock = output.clocks.get(output.activeMode);
                     input_activeTimeValue.setVisibility(View.VISIBLE);
                     input_activeTimeValue.setText(ClockOutput.formatTime(activeClock.getHours(), activeClock.getMinutes(), activeClock.getSeconds()));
